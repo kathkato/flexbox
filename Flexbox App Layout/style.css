@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 400;
+  background: #9de7e7;
+  color: #778290;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: #1d1d24;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: #1d1d24;
+  margin: 10px 0 20px 0;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+p {
+  margin: 10px 0;
+}
+
+span {
+  position: absolute;
+  top: 65px;
+}
+
+a {
+  color: #dc5462;
+  text-decoration: none;
+}
+
+a.top-button {
+  color: #fff;
+  padding: 5rem 0.5rem;
+  border-radius: 4px;
+}
+
+.fa {
+  color: #feba4b;
+}
+
+.app-wrap {
+  max-width: 750px;
+  height: 1334px;
+  margin: 5vh auto 5vh auto;
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+  -webkit-box-shadow: 6px 6px 36px 0 rgba(51,36,59,0.3);
+  -moz-box-shadow: 6px 6px 36px 0 rgba(51,36,59,0.3);
+  box-shadow: 6px 6px 36px 0 rgba(51,36,59,0.3);
+}
+
+.app-content {
+  padding: 0 20px;
+  background: #fff;
+  line-height: 1.5;
+}
+
+.location-details {
+  padding: 25px;
+  text-align: center;
+}
+
+.general {
+  padding: 0 0 20px 0;
+}
+
+.content-button {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.icon-bar a {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  color: #1d1d24;
+}
+
+.icon-bar a:first-child {
+  color: #dc5462;
+}
+
+.icon-bar a:first-child i {
+  color: #dc5462;
+}
+
+.icon-bar {
+  border-top: 1px solid #dfdfdf;
+}
+
+.icon-bar i {
+  display: block;
+  color: #1d1d24;
+}
+
+i {
+  font-size: 4.125rem;
+}
+
+.icon-bar p {
+  margin: 0 !important;
+}
+
+.app-header {
+  padding: 1rem;  
+  height: 650px;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65), transparent), url('http://katherinekato.com/misc/bakery.jpg') no-repeat center top / cover;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65), transparent), url('http://katherinekato.com/misc/bakery.jpg') no-repeat center top / cover;
+  background: linear-gradient(top, rgba(0,0,0,0.65), transparent), url('http://katherinekato.com/misc/bakery.jpg') no-repeat center top / cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.app-wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+}
+
+.app-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.order-button {
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 25px;
+  border: 2px solid #dc5462;
+  color: #dc5462;
+  border-radius: 0.8rem;
+  margin: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.order-button:hover {
+  background: #dc5462;
+  color: #fff;
+}
+
+.about {
+  padding: 20px 0 0 0;
+}
+
+.description {
+  text-align: left;
+}
+
+.icon-bar {
+  display: -webkit-box;
+  display: flex;
+}
+
+.icon-bar a {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
