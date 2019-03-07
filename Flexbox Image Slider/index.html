@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="container">
   <div class="slider">
     <img class="active" src="https://source.unsplash.com/gKk9rpyDryU">
     <img src="https://source.unsplash.com/VFGEhLznjPU">
@@ -17,18 +17,18 @@
   <nav class="slider-nav">
     <ul>
       <li class="arrow">
-        <a class="previous">
+        <button class="previous">
           <span>
             <i class="ion-arrow-left-c"></i>
           </span>
-        </a>
+        </button>
       </li>
       <li class="arrow">
-        <a class="next">
+        <button class="next">
           <span>
             <i class="ion-arrow-right-c"></i>
           </span>
-        </a>
+        </button>
       </li>
     </ul>
   </nav>
@@ -67,8 +67,19 @@ function showPreviousItem() {
   console.log(count);
 }
 
+function keyPress(e) {
+  e = e || window.event;
+  
+  if (e.keyCode == '37') {
+    showPreviousItem();
+  } else if (e.keyCode == '39') {
+    showNextItem();
+  }
+}
+
 nextItem.addEventListener('click', showNextItem);
 previousItem.addEventListener('click', showPreviousItem);
+document.addEventListener('keydown', keyPress);
 </script>
 
 </body>
